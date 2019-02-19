@@ -1,0 +1,85 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+body {
+  background-color: rgb(230,230,230);
+}
+
+div.header h1{
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+div.team {
+  
+}
+
+div.team a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid black;
+  font-size: 25px;
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  margin: 20px auto;
+  border-radius: 15px;
+  color: black;
+  background-image: linear-gradient(135deg, rgb(204, 153, 255), rgb(217, 179, 255));
+  box-shadow: 3px 3px 5px rgba(30,30,30,0.5);
+}
+
+div.team a:hover {
+  background-image: linear-gradient(135deg, rgb(230, 172, 0), rgb(255, 236, 179));
+}
+
+div.descript {
+  margin: 0px auto;
+  padding: 0px;
+  max-width: 400px;
+  max-height: 500px;
+  display: block;
+}
+
+div.descript img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px auto;
+  padding: 0px;
+}
+
